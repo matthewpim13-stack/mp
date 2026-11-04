@@ -1,0 +1,30 @@
+{
+	"geode": "4.0.1",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "user.input-buffer",
+	"name": "Input Buffer",
+	"version": "v1.0.0",
+	"developer": "you",
+	"description": "Buffers your jump inputs for a configurable number of ticks. Open the menu from the pause screen.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enable Buffering",
+			"default": true
+		},
+		"buffer-ticks": {
+			"type": "int",
+			"name": "Buffer Ticks",
+			"description": "How many physics ticks an early click is remembered.",
+			"default": 6,
+			"min": 1,
+			"max": 60,
+			"control": { "slider": true, "input": true }
+		}
+	}
+}
